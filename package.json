@@ -13,7 +13,8 @@
     "compile": "tsc --build tsconfig.json",
     "test:playwright": "npx playwright test --config=./tests/playwright.config.ts",
     "lint": "eslint \"src/**/*.ts\"",
-    "format": "npm run lint -- --fix"
+    "format": "npm run lint -- --fix",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
